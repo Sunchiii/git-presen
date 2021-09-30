@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="sl-root decks decks fullscreen">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta charset="utf-8">
+
+	<title>Git presentation</title>
+	<meta name="description" content="Git Presentation" />
+	<link rel="stylesheet" media="all" href="style.css" />
+	<link rel="stylesheet" href="style_add.css">
+</head>
+
+<body class="theme-font-quicksand theme-color-sky-blue">
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Geting git</h1>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6216/logo_2x.png"
+						style="width: 308.19968843460083px;"><br>
+				</div>
+				<div><img
+						src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6348/branching-illustration_2x.png"
+						style="text-align: right; width: 326.41652727127075px;"></div>
+				<div style="text-align: center;">Mojtaba Shahi Senobari --- Amirehsan Davoodi</div>
+			</section>
+			<section>
+				<section>
+					<h2><br></h2>
+					<h2><br></h2>
+					<h2>What is Git?</h2>
+					<div><span style="text-align: left;"><br></span></div>
+					<div>
+						<span>Distributed (</span><span style="text-align: left;">Decentralized</span><span>)</span>
+					</div>
+					<div><span>version control system</span></div>
+					<div><br></div>
+				</section>
+				<section>
+					<h2><br></h2>
+					<h2>VCS Types</h2>
+					<div><br></div>
+					<div>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6235/SCM-taxonomy.png"
+							style="height: 421.19968843460083px;"><br>
+					</div>
+				</section>
+				<section>
+					<h2><br></h2>
+					<h2>
+						<h3>CENTRALIZED VCS</h3>
+						<div><br></div>
+						<div>
+							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6237/18333fig0102-tn.png"
+								style="height: 388.41652727127075px;"><br>
+						</div>
+					</h2>
+				</section>
+				<section>
+					<h2><br></h2>
+					<h2>
+						<h3>Distributed VCS</h3>
+						<div>
+							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6238/18333fig0103-tn.png"
+								style="height: 445.41652727127075px;"><br>
+						</div>
+					</h2>
+				</section>
+				<section>
+					<h2><br></h2>
+					<h3>Delta Base Repository</h3>
+					<div>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6240/delta-commit-5.png"
+							style="height: 465.41652727127075px;"><br>
+					</div>
+				</section>
+				<section>
+					<h2><br></h2>
+					<h3>DAg Base repository</h3>
+					<div>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6242/dag-commit-5.png"
+							style="height: 481.41652727127075px;"><br>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h2><br></h2>
+				<div><br></div>
+				<div><br></div>
+				<div>
+					<h2>GIT DESIGN GOALS</h2>
+					<div><span style="text-align: left;">• Speed</span></div>
+					<div>
+						<span style="text-align: left;">• Simple design</span> <span
+							style="text-align: left;"><br></span>
+					</div>
+					<div>
+						<span style="text-align: left;">• Strong support for thousands of parallel branches</span> <span
+							style="text-align: left;"><br></span>
+					</div>
+					<div>
+						<span style="text-align: left;">• Fully distributed</span> <span
+							style="text-align: left;"><br></span>
+					</div>
+					<div><span style="text-align: left;">• Able to handle larges projects like Linux kernel
+							effectively</span></div>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<div>
+					<h2><br></h2>
+					<div><br></div>
+					<h2>GIT DOESN'T DELETE</h2>
+					<div><br></div>
+					<div>
+						<span style="text-align: left;">• Git generally only adds data</span> <br>
+					</div>
+					<div>
+						<span style="text-align: left;">• If you mess up, you can usually recover your stuff</span>
+						<span style="text-align: left;"><br></span>
+					</div>
+					<div><span style="text-align: left;">• Recovery can be tricky though</span></div>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>WorkFlow</h2>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6249/18333fig0106-tn.png"
+						style="height: 443.41652727127075px;"><br>
+				</div>
+			</section>
+			<section data-state="submerge">
+				<h2><br></h2>
+				<div><br></div>
+				<div><br></div>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6251/Screen_Shot_2013-05-15_at_2.26.38_AM.png"
+						><br>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<div>
+					<div style="font-size: 36.292572021484375px; font-style: normal; font-variant: normal;">
+						<h2>CONFIGURATION</h2>
+						<div><br></div>
+						<h5>IDENTITY</h5>
+					</div>
+					<div style="font-size: 36.292572021484375px; font-style: normal; font-variant: normal;">
+						<pre style="width: 861.46875px;"><code>$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com<br></code></pre>
+					</div>
+				</div>
+				<div>
+					<p></p>
+					<h2 style="font-style: normal; font-variant: normal;"></h2>
+					<p></p>
+					<p
+						style="font-size: 36.292572021484375px; font-style: normal; font-variant: normal; text-transform: none;">
+						CREATING A REPOSITORY</p>
+					<p></p>
+					<pre><code>$ git init<br></code></pre>
+				</div>
+				<div>
+					<h2></h2>
+					<p></p>
+					<p
+						style="font-size: 36.292572021484375px; font-style: normal; font-variant: normal; text-transform: none;">
+						CLONING A REPOSITORY</p>
+					<p></p>
+					<h3>
+						<pre><code>$ GIT CLONE HTTPS://GITHUB.COM/SUNCHIII/SUNCHIII</code></pre>
+					</h3>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>Common Commands <span>(1)</span>
+				</h2>
+				<div><br></div>
+				<div>ADD NEW FILE</div>
+				<pre><code>$ git add README.rst </code></pre>
+				<div>
+					<span
+						style="color: rgb(220, 220, 220); font-family: monospace; text-align: left; white-space: pre-wrap;">
+					</span><span>REMOVE FILE</span><br>
+				</div>
+				<pre><code>$ git rm file.py </code></pre>
+				<div>
+					<span
+						style="color: rgb(220, 220, 220); font-family: monospace; text-align: left; white-space: pre-wrap;">
+					</span><span>COMMIT CHANGES</span><br>
+				</div>
+				<div>
+					<pre><code>$ git commit -am 'First commit'<br></code></pre>
+				</div>
+				<div><span
+						style="font-size: 36.47868728637695px; font-style: normal; font-variant: normal; background-color: rgb(247, 251, 252);"><br></span>
+				</div>
+				<div><span
+						style="font-size: 36.47868728637695px; font-style: normal; font-variant: normal; background-color: rgb(247, 251, 252);"><br></span>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>
+					<h2 style="font-style: normal; font-variant: normal;"></h2>
+					<h2 style="font-style: normal; font-variant: normal;">COMMON COMMANDS (2)</h2>
+				</h2>
+				<div>SHOW LOG</div>
+				<div>
+					<pre><code style="text-align: left;">$ git log<br></code></pre>
+				</div>
+				<div style="text-align: center;">SHOW COMMITS</div>
+				<div style="text-align: center;">
+					<pre><code>$ git show
+</code></pre>
+				</div>
+				<div>SHOW DIFFS</div>
+				<div>
+					<pre><code>$ git diff<br></code></pre>
+				</div>
+				<div><br></div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<div><br></div>
+				<h2>UNDOING THINGS</h2>
+				<div>
+					<h5><br></h5>
+				</div>
+				<div>
+					<h5>UNMODIFY MODIFIED FILE</h5>
+					<div>
+						<pre><code>$ git checkout -- file.py<br></code></pre>
+					</div>
+					<h5>REVERT A COMMIT</h5>
+					<div>
+						<pre><code>$ git revert 1776f5<br></code></pre>
+					</div>
+				</div>
+				<div><br></div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>BRANCHES</h2>
+				<div><br></div>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6274/18333fig0319-tn.png"
+						style="height: 399.41652727127075px;"><br>
+				</div>
+			</section>
+			<section>
+				<h2><span style="font-size: 64.566px;">BRANCH MANAGEMENT</span></h2>
+				<div>Create new Branch</div>
+				<div>
+					<pre><code>$ git branch iss53
+$ git checkout -b iss53 master<br></code></pre>
+				</div>
+				<div>Switch Branch</div>
+				<div>
+					<pre><code>$ git checkout iss53<br></code></pre>
+				</div>
+				<div>Delete Branch</div>
+				<div>
+					<pre><code>$ git branch -d iss53</code></pre>
+				</div>
+				<div>Show All Branch</div>
+				<div>
+					<pre><code>$ git branch -d iss53
+     iss53</code><code>   * master</code><code>     testing</code></pre>
+				</div>
+				<div><br></div>
+				<div></div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>Remote Repository</h2>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6343/deploy3.png"
+						style="height: 446.41652727127075px;"><br>
+				</div>
+			</section>
+			<section>
+				<h2>Remote Command</h2>
+				<div>Add origin or link repo</div>
+				<div>
+					<pre><code>$ git remote add <remote> origin repo_name</remote></code></pre>
+				</div>
+				<div>Push To remote</div>
+				<div>
+					<pre><code>$ git push <remote> origin branch_name</remote></code></pre>
+				</div>
+				<div>
+					<span style="font-size: 36.292572021484375px; font-style: normal; font-variant: normal;">Fetch &amp;
+						Merge</span><br>
+				</div>
+				<div>
+					<pre><code>$ git pull<br></code></pre>
+				</div>
+				<div>Fetch</div>
+				<pre><code>$ git fetch origin</code></pre>
+				<div>
+					<span>Merge</span><br>
+				</div>
+				<div>
+					<pre><code>$ git merge origin master<br></code></pre>
+				</div>
+				<div><br></div>
+			</section>
+			<section>
+				<h2>
+					<span style="font-size: 64.566px;">Merge conflicts</span><br>
+				</h2>
+				<div><br></div>
+				<div>
+					<pre
+						style="font-style: normal; font-variant: normal; width: 863.9871826171875px; background-color: rgb(247, 251, 252);">$ git merge iss53
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.</pre>
+				</div>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6286/image.png"
+						style="height: 392.41652727127075px;"><br>
+				</div>
+			</section>
+			<section data-state="cobalt">
+				<h2><br></h2>
+				<div>
+					<h2>NOW GIT TO WORK!</h2>
+				</div>
+				<div><br></div>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6293/image__1_.png"
+					><br>
+				</div>
+			</section>
+			<section>
+				<section>
+					<div class="center">
+						<h2 class="center_item">Where is the Place of Review?</h2>
+					</div>
+				</section>
+				<section>
+					<h2>workFlow</h2>
+					<div><br></div>
+					<ol>
+						<li>initial (clone = copy)</li>
+						<li>fetch &amp; merge (pull)</li>
+						<li>branching your local repository [optional]</li>
+						<li>modify (improve)</li>
+						<li>commit to local repository</li>
+						<li>push to your branch on origin</li>
+						<li><span style="text-align: center;"><b><u><i>Diff File = File for showing
+											changes</i></u></b></span></li>
+					</ol>
+					<div style="text-align: center;"><br></div>
+					<div style="text-align: center;">We do Review At this stage</div>
+				</section>
+				<section data-state="sunset">
+					<h2><br></h2>
+					<div><br></div>
+					<div><br></div>
+					<div><br></div>
+					<div><br></div>
+					<h2>
+						<b>PROFESSIONALS</b> review code to FIND OUT <b>errors</b>
+					</h2>
+				</section>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>Riview Tools</h2>
+				<div>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6322/Screen_Shot_2013-05-15_at_4.10.55_AM.png"
+						style="width: 692.4165272712708px;"><br>
+				</div>
+			</section>
+			<section>
+				<h2><br></h2>
+				<h2>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6335/logo.png"
+						><img
+						src="https://s3.amazonaws.com/media-p.slid.es/uploads/moji3000/images/6336/reviewboard.png"
+						><br>
+				</h2>
+				<div><br></div>
+				<div>
+					<ul>
+						<li>
+							<span style="text-align: center;">Web-based <b>Collaborative</b> Code Review</span><br>
+						</li>
+						<li><span style="text-align: center;"><span style="text-align: start;"><b>Free</b>
+									software</span><br></span></li>
+						<li><span style="text-align: center;"><span style="text-align: start;">Integrated with
+									<b>most</b> VCS</span></span></li>
+						<li>Install on <b>any</b> server</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2>
+					<h2><br></h2>
+					<h2><br></h2>
+					<h2>resources:</h2>
+				</h2>
+				<div>
+					<ul>
+						<li style="text-align: left;"><a href="http://git-scm.com/book" class="roll"
+								style="text-align: center;">http://git-scm.com/book</a></li>
+						<li style="text-align: left;"><a href="http://git.mikeward.org/" class="roll"
+								style="font-size: 36.47868728637695px; font-style: normal; font-variant: normal; text-align: center;">http://git.mikeward.org/</a>
+						</li>
+						<li style="text-align: left;"><a
+								href="http://www.reviewboard.org/">http://www.reviewboard.org/</a></li>
+						<li style="text-align: left;"><span>The internet </span></li>
+					</ul>
+				</div>
+			</section>
+			<section data-state="lila">
+				<div class="center">
+					<h2 class="center_item">Thanks.</h2>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+
+	<script>
+		var SLConfig = { "deck": { "id": 37661, "slug": "git_presentation", "title": "Git presentation", "description": "Git Presentation for Software Engineering 2 Course", "width": 960, "height": 700, "margin": 0.05, "visibility": "all", "published_at": "2013-05-14T21:41:55.152Z", "sanitize_messages": null, "thumbnail_url": "https://s3.amazonaws.com/media-p.slid.es/thumbnails/moji3000/892b33/git_presentation.jpg", "view_count": 20961, "user": { "id": 37004, "username": "moji3000", "name": "Mojtaba Shahi", "description": "", "thumbnail_url": "https://www.gravatar.com/avatar/65d846b6b70888a6374da00597c45c41?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png", "account_type": "default", "team_id": null, "settings": { "id": 6825, "present_controls": true, "present_upsizing": true, "present_pointer": false, "present_notes": true, "default_deck_tag_id": null } }, "background_transition": null, "transition": "default", "theme_id": null, "theme_font": "quicksand", "theme_color": "sky-blue", "auto_slide_interval": 0, "comments_enabled": true, "forking_enabled": true, "rolling_links": true, "center": false, "shuffle": null, "should_loop": false, "share_notes": null, "slide_number": null, "slide_count": 30, "rtl": false, "version": 0, "collaborative": null, "deck_user_editor_limit": null, "data_updated_at": null, "font_typekit": null, "font_google": null, "time_limit": null, "navigation_mode": "default", "upsizing_enabled": null }, "user": { "id": 37004, "username": "moji3000", "name": "Mojtaba Shahi", "description": "", "thumbnail_url": "https://www.gravatar.com/avatar/65d846b6b70888a6374da00597c45c41?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png", "account_type": "default", "team_id": null, "settings": { "id": 6825, "present_controls": true, "present_upsizing": true, "present_pointer": false, "present_notes": true, "default_deck_tag_id": null } } };
+	</script>
+	<script src="js1.js"></script>
+	<script src="js2.js"></script>
+
+
+</body>
+
+</html>
